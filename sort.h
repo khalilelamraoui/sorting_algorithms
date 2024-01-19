@@ -28,10 +28,16 @@ void print_list(const listint_t *list);
 /**
 * bubble_sort - Sorts an array of integers in ascending order
 * using the Bubble sort algorithm
-*
 * @array: Non-sorted array
 * @size: Number of elements in @array
 */
 void bubble_sort(int *array, size_t size);
+
+/**
+ * insertion_sort_list - Sorts a doubly linked list of integers
+ * in ascending order using the Insertion sort algorithm
+ * @list: Doubly linked list
+ */
+void insertion_sort_list(listint_t **list);
 
 #endif /* SORT_H */
