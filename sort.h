@@ -46,4 +46,35 @@ void insertion_sort_list(listint_t **list);
  * @size: Number of elements in @array
  */
 void selection_sort(int *array, size_t size);
+
+/**
+ * quick_sort - Sorts an array of integers in ascending order
+ * using the Quick sort algorithm
+ * @array: Non-sorted array
+ * @size: Number of elements in @array
+ */
+void quick_sort(int *array, size_t size);
+
+/**
+ * quick_sort_recursive - Sorts an array of integers in ascending order
+ * using the Quick sort algorithm
+ * @array: Non-sorted array
+ * @lo: Lowest index of @array
+ * @hi: Highest index of @array
+ * @size: Number of elements in @array
+ */
+void quick_sort_recursive(int *array, int lo, int hi, size_t size);
+
+/**
+ * partition - Sorts an array of integers in ascending order
+ * using the Quick sort algorithm
+ * @array: Non-sorted array
+ * @lo: Lowest index of @array
+ * @hi: Highest index of @array
+ * @size: Number of elements in @array
+ *
+ * Return: Index of the pivot
+ */
+int partition(int *array, int lo, int hi, size_t size);
+
 #endif /* SORT_H */
