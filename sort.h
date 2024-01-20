@@ -85,4 +85,12 @@ int partition(int *array, int lo, int hi, size_t size);
 */
 void shell_sort(int *array, size_t size);
 
+/**
+* counting_sort - Sorts an array of integers in ascending order
+* using the Counting sort algorithm
+* @array: Non-sorted array
+* @size: Number of elements in @array
+*/
+void counting_sort(int *array, size_t size);
+
 #endif /* SORT_H */
