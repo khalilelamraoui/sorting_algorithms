@@ -77,4 +77,12 @@ void quick_sort_recursive(int *array, int lo, int hi, size_t size);
  */
 int partition(int *array, int lo, int hi, size_t size);
 
+/**
+* shell_sort - Sorts an array of integers in ascending order
+* using the Shell sort algorithm
+* @array: Non-sorted array
+* @size: Number of elements in @array
+*/
+void shell_sort(int *array, size_t size);
+
 #endif /* SORT_H */
