@@ -93,4 +93,35 @@ void shell_sort(int *array, size_t size);
 */
 void counting_sort(int *array, size_t size);
 
+/**
+* merge_sort - Sorts an array of integers in ascending order
+* using the Merge sort algorithm
+* @array: Non-sorted array
+* @size: Number of elements in @array
+*/
+void merge_sort(int *array, size_t size);
+
+/**
+* merge_sort_recursive - Sorts an array of integers in ascending order
+* using the Merge sort algorithm
+* @array: Non-sorted array
+* @tmp: Temporary array
+* @lo: Lowest index of @array
+* @hi: Highest index of @array
+*/
+void merge_sort_recursive(int *array, int *tmp, int lo, int hi);
+
+
+/**
+* merge - Sorts an array of integers in ascending order
+* using the Merge sort algorithm
+* @array: Non-sorted array
+* @tmp: Temporary array
+* @lo: Lowest index of @array
+* @mid: Middle index of @array
+* @hi: Highest index of @array
+*/
+void merge(int *array, int *tmp, int lo, int mid, int hi);
+
+
 #endif /* SORT_H */
