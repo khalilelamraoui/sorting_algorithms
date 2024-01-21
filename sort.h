@@ -78,6 +78,21 @@ void quick_sort_recursive(int *array, int lo, int hi, size_t size);
 int partition(int *array, int lo, int hi, size_t size);
 
 /**
+* cocktail_sort_list - Sorts a doubly linked list of integers
+* in ascending order using the Cocktail shaker sort algorithm
+* @list: Doubly linked list
+*/
+void cocktail_sort_list(listint_t **list);
+
+/**
+* swap_nodes - Swaps two nodes of a doubly linked list
+* @node1: First node
+* @node2: Second node
+* @list: Doubly linked list
+*/
+void swap_nodes(listint_t *node1, listint_t *node2, listint_t **list);
+
+/**
 * shell_sort - Sorts an array of integers in ascending order
 * using the Shell sort algorithm
 * @array: Non-sorted array
