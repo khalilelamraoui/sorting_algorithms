@@ -123,5 +123,21 @@ void merge_sort_recursive(int *array, int *tmp, int lo, int hi);
 */
 void merge(int *array, int *tmp, int lo, int mid, int hi);
 
+/**
+* heap_sort - Sorts an array of integers in ascending order
+* using the Heap sort algorithm
+* @array: Non-sorted array
+* @size: Number of elements in @array
+*/
+void heap_sort(int *array, size_t size);
+
+/**
+* heapify - Heapifies a subtree
+* @array: Non-sorted array
+* @size: Number of elements in @array
+* @i: Index of the subtree root
+* @size_orig: Original size of the array
+*/
+void heapify(int *array, int size, int i, int size_orig);
 
 #endif /* SORT_H */
