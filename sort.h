@@ -155,4 +155,22 @@ void heap_sort(int *array, size_t size);
 */
 void heapify(int *array, int size, int i, int size_orig);
 
+/**
+* counting_radix - Sorts an array of integers in ascending order
+* using the Counting sort algorithm
+* @array: Non-sorted array
+* @size: Number of elements in @array
+* @exp: Exponent
+* @tmp: Temporary array
+*/
+void counting_radix(int *array, size_t size, int exp, int *tmp);
+
+/**
+* radix_sort - Sorts an array of integers in ascending order
+* using the Radix sort algorithm
+* @array: Non-sorted array
+* @size: Number of elements in @array
+*/
+void radix_sort(int *array, size_t size);
+
 #endif /* SORT_H */
