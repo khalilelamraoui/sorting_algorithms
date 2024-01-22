@@ -173,4 +173,39 @@ void counting_radix(int *array, size_t size, int exp, int *tmp);
 */
 void radix_sort(int *array, size_t size);
 
+/**
+* bitonic_sort - function that sorts an array of integers in ascending order
+* @array: array
+* @size: array lenght
+*/
+void bitonic_sort(int *array, size_t size);
+
+/**
+* bitonicsort - function that sorts an array of integers in ascending order
+* @arr: array
+* @low: first element
+* @nbrelmt: number of elements
+* @order: 1: ascending order, 0 descending order
+* @size: array lenght
+*/
+void bitonicsort(int arr[], int low, int nbrelmt, int order, int size);
+
+/**
+* swap - function that swaps two elements in an array
+* @arr: array
+* @item1: item one
+* @item2: item two
+* @order: 1: ascending order, 0 descending order
+*/
+void swap(int arr[], int item1, int item2, int order);
+
+/**
+* merge_bitonic - function that merges two subarrays of arr[]
+* @arr: array
+* @low: first element
+* @nbrelmt: elements number
+* @order: 1: ascending order, 0 descending order
+*/
+void merge_bitonic(int arr[], int low, int nbrelmt, int order);
+
 #endif /* SORT_H */
