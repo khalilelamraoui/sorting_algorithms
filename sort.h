@@ -208,4 +208,42 @@ void swap(int arr[], int item1, int item2, int order);
 */
 void merge_bitonic(int arr[], int low, int nbrelmt, int order);
 
+/**
+* quick_sort_hoare - sorts an array of integers in ascending order
+* using the Quick sort algorithm
+* @array: array to sort
+* @size: size of the array
+* Return: void
+*/
+void quick_sort_hoare(int *array, size_t size);
+
+/**
+* quick_sort_hoare_recursion - sorts an array of integers in ascending order
+* using the Quick sort algorithm
+* @array: array to sort
+* @size: size of the array
+* @start: start index
+* @end: end index
+* Return: void
+*/
+void quick_sort_hoare_recursion(int *array, int start, int end, size_t size);
+
+/**
+* partition_hoare - Lomuto partition scheme
+* @array: array to sort
+* @size: size of the array
+* @start: start index
+* @end: end index
+* Return: void
+*/
+int partition_hoare(int *array, int start, int end, size_t size);
+
+/**
+* swap_hoare - swap two integers
+* @a: first integer
+* @b: second integer
+* Return: void
+*/
+void swap_hoare(int *a, int *b);
+
 #endif /* SORT_H */
